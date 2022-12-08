@@ -10,6 +10,20 @@
     --primary-opacity-color: rgba(0, 127, 95, 0.1);;
   }
 @media (max-width: 575.98px) {
+    /* Common css start */
+    h3{
+        font-size: 20px !important;
+    }
+    .common_heading h2 {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+    .common_heading p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    /* Common css end */
     #navbar {
         padding: 5px 0;
         background: #fff;
@@ -40,8 +54,126 @@
     #banner .overlay {
         padding-top: 35px;
     }
+    .search_box {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .search_box .item {
+        width: auto;
+    }
+    .search_box .item:last-child{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .search_box .item button {
+        border-radius: 5px;
+        padding: 10px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
     /* Banner part end */
 
+    /* travel_benefit start======== */
+    #travel_benefit {
+        padding-top: 60px;
+    }
+    #travel_benefit .common_heading {
+        padding-bottom: 50px;
+    }
+    .benefit_item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .benefit_item .info {
+        padding-right: 0;
+    }
+    .benefit_item .info h3 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    /* travel_benefit end========== */
+
+
+    /* popular end========== */
+    #popular {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    /* popular end========== */
+
+    /* go_travels end========== */
+    #go_travels {
+        padding: 60px 0;
+    }
+    #go_travels .common_heading {
+        padding-right: 0;
+        text-align: center;
+    }
+    .go_travel_left ul li .text {
+        padding-right: 0;
+    }
+    .go_travel_left {
+        padding-bottom: 40px;
+    }
+    .go_travel_right .item {
+        padding: 20px 30px;
+        width: 100%;
+    }
+    .go_travel_right .item .text h3 {
+        line-height: 1;
+    }
+    .go_travel_right .item .text p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    /* go_travels end========== */
+
+    /* destination end========== */
+    #destination {
+        padding: 10px;
+    }
+    .destination_image {
+        width: 221px;
+        height: 395px;
+    }
+    .destination_image .img_2 {
+        right: -68px;
+        bottom: 75px;
+        width: 100%;
+    }
+    .destination_image .text {
+        width: 111%;
+    }
+    .destination_image .text .search {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .destination_image .text ul li {
+        padding-left: 39px;
+        font-size: 14px;
+    }
+    .destination_text {
+        padding-bottom: 40px;
+    }
+    .destination_image .text .search input {
+        font-size: 14px;
+        width: 100%;
+    }
+    /* destination end========== */
+
+}
+
+@media (max-width:385.98px) {
+    .destination_image .img_2 {
+        right: -52px;
+        bottom: 108px;
+        width: 100%;
+    }
 }
 
 /* @media (min-width: 576px) and (max-width: 767.98px) {
