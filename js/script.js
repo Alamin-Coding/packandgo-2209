@@ -19,10 +19,10 @@ $(function(){
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 768,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                centerMode:false
               }
             },
             {
@@ -35,6 +35,38 @@ $(function(){
             }
           ]
     })
+
+    const destination = document.querySelectorAll(".destination");
+    const collapse = document.querySelectorAll(".list_item");
+    console.log(destination);
+
+    destination.forEach((item)=> {
+      item.addEventListener("click", function(e) {
+        collapse.forEach((list)=> {
+          list.classList.add("collapse")
+        })
+      })
+    })
+    
+    window.addEventListener("resize", (e)=> {
+      let screen_size = document.body.clientWidth;
+      console.log(screen_size);
+      if (screen_size < 900) {
+        collapse.forEach((event)=> {
+          event.classList.add("collapse")
+        })
+      }else{
+        collapse.forEach((event)=> {
+          event.classList.remove("collapse")
+        })
+      }
+    })
+    
+    // $(".list_item").slideUp(500)
+    // $("#destination").click(()=> {
+    //   $(".list_item").slideDown(500)
+    //   console.log("slide");
+    // })
 
     // navbar-toggler
 

@@ -243,6 +243,7 @@ body{
   -o-transition: all linear .3s;
 }
 .benefit_item:hover {
+  cursor: pointer;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
 }
 .benefit_item .icon{
@@ -558,6 +559,9 @@ body{
 #destination .container .row:nth-child(even){
   flex-direction: row-reverse;
   padding: 50px 0;
+}
+#destination .container .row:nth-child(even) .destination_text {
+  text-align: right;
 }
 /* ===============================
       destination part end
